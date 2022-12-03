@@ -1,0 +1,51 @@
+#links {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0px;
+}
+
+#intro {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#intro > * {
+  margin: 12px;
+}
+
+#scroll-container {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+
+#scroll-container button,
+#links a {
+  -moz-transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+}
+
+.flip {
+  transform: rotate(-180deg);
+}
+
+.trans-left {
+  transform: translate(-24px, 0px);
+}
+
+.trans-right {
+  transform: translate(24px, 0px);
+}
